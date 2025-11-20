@@ -13,20 +13,20 @@ from tglogging import TelegramLogHandler
 # Config 
 class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    API_ID = int(os.environ.get("API_ID",  "29755489"))
-    API_HASH = os.environ.get("API_HASH", "05e0d957751c827aa03494f503ab54fe")
+    API_ID = int(os.environ.get("API_ID",  "26421834"))
+    API_HASH = os.environ.get("API_HASH", "fe21db9f61ff01300fc1fa3673617983")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     SESSIONS = "./SESSIONS"
 
-    AUTH_USERS = os.environ.get('AUTH_USERS', '7441472352').split(',')
+    AUTH_USERS = os.environ.get('AUTH_USERS', '6344648593').split(',')
     for i in range(len(AUTH_USERS)):
         AUTH_USERS[i] = int(AUTH_USERS[i])
 
-    GROUPS = os.environ.get('GROUPS', '1002472087176').split(',')
+    GROUPS = os.environ.get('GROUPS', '-1003314249493').split(',')
     for i in range(len(GROUPS)):
         GROUPS[i] = int(GROUPS[i])
 
-    LOG_CH = os.environ.get("LOG_CH", "-1002059340064")
+    LOG_CH = os.environ.get("LOG_CH", "")
 
 # TelegramLogHandler is a custom handler which is inherited from an existing handler. ie, StreamHandler.
 logging.basicConfig(
@@ -60,7 +60,7 @@ class Msg(object):
     START_MSG = "**/pro**"
 
     TXT_MSG = "Hey <b>{user},"\
-        "\n\n`I'm Ankit Shakya Robot. I Can Download Many Type of Links.`"\
+        "\n\n`I'm 𝄟✮͢🦋⃟≛⃝𝑩𝕣ΐ𝕛℮𝚜Ꮒ✮⃝🩷 Robot. I Can Download Many Type of Links.`"\
             "\n\nSend a TXT or HTML file :-</b>"
 
     ERROR_MSG = "<b>DL Failed ({no_of_files}) :-</b> "\
